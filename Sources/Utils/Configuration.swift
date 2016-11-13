@@ -24,7 +24,7 @@ internal struct ConfigData {
     }
 
     func value(key: String) -> AnyObject? {
-        return (data as! NSDictionary).value(forKeyPath: key) as AnyObject?
+        return (data as NSDictionary).value(forKeyPath: key) as AnyObject?
     }
 
 }
