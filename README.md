@@ -6,10 +6,21 @@ A small sample package created using SPM
   ```
   $swift build
   ```
+  To use this package on another application or project add the following to yout Package.swift
   
+  ```
+  import PackageDescription
+
+  let package = Package(
+      name: "Demo",
+      targets: [],
+      dependencies: [
+          .Package(url: "https://github.com/RoshanNindrai/SPMDemo.git",
+                   majorVersion: 1),
+          ]
+  )
+```
+
 # Swiftenv
    Since SPM requires swift 3, i would recommend using swiftenv (https://swiftenv.fuller.li/en/latest/) to manage swift versions.
-   
-# Todo
-
-1. To make the sample package use SPM, to do so we have to remove the demo project from the root.
+     
