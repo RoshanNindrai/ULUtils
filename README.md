@@ -15,7 +15,7 @@ A small sample package created using SPM
       name: "Demo",
       targets: [],
       dependencies: [
-          .Package(url: "https://github.com/RoshanNindrai/SPMDemo.git",
+          .Package(url: "https://github.com/RoshanNindrai/ULUtils.git",
                    majorVersion: 1),
           ]
   )
